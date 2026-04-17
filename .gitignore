@@ -1,0 +1,69 @@
+# --- Python ---
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# --- Virtual envs ---
+.venv/
+venv/
+env/
+
+# --- Build / dist ---
+dist/
+dist-staging/
+build/
+build-staging/
+*.egg-info/
+packaging/dist/
+packaging/build/
+
+# --- Node / web ---
+node_modules/
+apps/web/dist/
+apps/web/.vite/
+
+# --- Model weights (too large for Git; fetch on demand) ---
+*.pt
+*.pth
+*.onnx
+*.engine
+mobile_sam.pt
+yolov8*.pt
+yolo26*.pt
+
+# --- Demo / runtime artifacts ---
+apps/api/demo_data/
+apps/api/tmp_*/
+apps/api/tmp_*.png
+apps/api/workspaces/
+apps/api/evaluation_runs/
+apps/api/training_data/
+apps/api/tmp_case/
+*.log
+*.tmp
+*.bak
+*.orig
+
+# --- IDE ---
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+
+# --- Duplicated subproject (published separately as vision-autolabel-demo) ---
+apps/ship_defect_labeler/
+
+# --- Lock files that explode diffs ---
+uv.lock
+
+# --- Secrets ---
+.env
+.env.*
+!.env.example
+*.secret
+credentials.json

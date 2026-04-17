@@ -1,0 +1,33 @@
+[project]
+name = "autolabel-ml-platform-api"
+version = "0.1.0"
+description = "Demo API for a data-recovery-first ML platform"
+requires-python = ">=3.12"
+dependencies = [
+  "fastapi>=0.116.0",
+  "uvicorn>=0.35.0",
+  "pillow>=11.3.0",
+  "numpy>=2.3.0",
+  "python-multipart>=0.0.20",
+]
+
+[dependency-groups]
+dev = [
+  "pytest>=8.4.0",
+  "httpx>=0.28.0",
+]
+packaging = [
+  "pyinstaller>=6.16.0",
+]
+vision = [
+    "opencv-python>=4.13.0.92",
+    "torch>=2.11.0",
+    "torchvision>=0.26.0",
+    "ultralytics>=8.4.37",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.uv]
+package = true
