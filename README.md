@@ -6,7 +6,6 @@
 ![Python](https://img.shields.io/badge/python-3.12%2B-blue.svg)
 ![FastAPI](https://img.shields.io/badge/backend-FastAPI-009688.svg)
 ![YOLOv8](https://img.shields.io/badge/detector-YOLOv8-00FFFF.svg)
-![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)
 ![Status](https://img.shields.io/badge/status-research--demo-orange.svg)
 
 Public-safe scaffold of a V1 research platform. The focus is the engineering pattern — a workspace the operator can click through from raw frames to a training-plan — not any specific dataset or customer.
@@ -134,9 +133,3 @@ Deeper design notes: [`docs/architecture.md`](docs/architecture.md), [`docs/phas
 - Trained weights (`*.pt`, `*.onnx`, `mobile_sam.pt`, etc.) — fetch on demand
 - Runtime artifacts (`demo_data/`, `workspaces/`, `evaluation_runs/`, `training_data/`)
 - Build outputs (`build/`, `build-staging/`, `dist/`, `.venv/`) — reproduce via `uv sync`
-
----
-
-## License
-
-MIT — see [LICENSE](LICENSE).
